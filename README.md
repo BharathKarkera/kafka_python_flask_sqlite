@@ -87,4 +87,40 @@ Order details {'order_id': '024661dd-53b1-4ca9-a59d-7d93cb1063e0', 'number_of_it
 
 Get the order details :
 
+ 3:19PM @Bharath  ~ curl -i http://localhost:5000/details/b0b996d0-e24e-4598-bcbc-7ba6d402277c
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 148
+Server: Werkzeug/2.0.2 Python/3.9.7
+Date: Fri, 30 Dec 2022 21:19:41 GMT
 
+[
+  {
+    "cost": 30, 
+    "email_id": "shrini@gmail.com", 
+    "number_of_items": 2, 
+    "order_id": "b0b996d0-e24e-4598-bcbc-7ba6d402277c"
+  }
+]
+ 3:19PM @Bharath  ~ 
+ 
+ 
+ 
+ Get all order details :
+ 
+  3:32PM @Bharath  ~ curl -i -u admin:admin http://localhost:5000/details                                 
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 148
+Server: Werkzeug/2.0.2 Python/3.9.7
+Date: Fri, 30 Dec 2022 21:32:46 GMT
+
+[
+  {
+    "cost": 150, 
+    "email_id": "naga@gmail.com", 
+    "number_of_items": 10, 
+    "order_id": "2d7c166d-7494-45d1-b4e5-83595a7151e7"
+  }
+]
+ 3:32PM @Bharath  ~ 
