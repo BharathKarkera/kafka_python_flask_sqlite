@@ -51,3 +51,40 @@ Run the flask app :
 Place an order by passing email id and the number of quantity :
 
 
+ 3:11PM @Bharath  ~ curl --data "quantity_no_text=10&email_id=naga@gmail.com" http://localhost:5000/order
+Order details {'order_id': 'fe843f95-73a3-4537-af29-b179c8fa5ec4', 'number_of_items': 10, 'email_id': 'naga@gmail.com', 'cost': 150}
+3:11PM @Bharath  ~ 
+ 3:11PM @Bharath  ~ 
+ 3:11PM @Bharath  ~ curl -i --data "quantity_no_text=15&email_id=bharath@gmail.com" http://localhost:5000/order
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 135
+Server: Werkzeug/2.0.2 Python/3.9.7
+Date: Fri, 30 Dec 2022 21:11:45 GMT
+
+Order details {'order_id': '6645d7e5-c1a0-4a33-bfbe-13c70f365555', 'number_of_items': 15, 'email_id': 'bharath@gmail.com', 'cost': 225}
+3:11PM @Bharath  ~ 
+ 3:11PM @Bharath  ~ 
+ 3:11PM @Bharath  ~ curl -i --data "quantity_no_text=8&email_id=suman@gmail.com" http://localhost:5000/order
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 132
+Server: Werkzeug/2.0.2 Python/3.9.7
+Date: Fri, 30 Dec 2022 21:12:00 GMT
+
+Order details {'order_id': 'b0180660-7953-463c-a0c3-9d85918cd2f2', 'number_of_items': 8, 'email_id': 'suman@gmail.com', 'cost': 120}
+
+ 3:13PM @Bharath  ~ curl -i -X POST  --data "quantity_no_text=2&email_id=shrini@gmail.com" http://localhost:5000/order
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 132
+Server: Werkzeug/2.0.2 Python/3.9.7
+Date: Fri, 30 Dec 2022 21:14:15 GMT
+
+Order details {'order_id': '024661dd-53b1-4ca9-a59d-7d93cb1063e0', 'number_of_items': 2, 'email_id': 'shrini@gmail.com', 'cost': 30}
+
+
+
+Get the order details :
+
+
