@@ -3,7 +3,7 @@
 
 **First start zookeeper instance :**
 
- 4:43PM @Bharath  ~ /opt/brew/opt/kafka/bin/zookeeper-server-start /opt/brew/etc/kafka/zookeeper.properties
+ 4:43PM @Bharath  ~ `/opt/brew/opt/kafka/bin/zookeeper-server-start /opt/brew/etc/kafka/zookeeper.properties`
 [2022-12-28 16:43:38,055] INFO Reading configuration from: /opt/brew/etc/kafka/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
 [2022-12-28 16:43:38,066] INFO clientPortAddress is 0.0.0.0:2181 (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
 [2022-12-28 16:43:38,066] INFO secureClientPort is not set (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
