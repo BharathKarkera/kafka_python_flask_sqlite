@@ -1,7 +1,7 @@
 # kafka_python_flask_sqlite
 
 
-First start zookeeper instance :
+**First start zookeeper instance :**
 
  4:43PM @Bharath  ~ /opt/brew/opt/kafka/bin/zookeeper-server-start /opt/brew/etc/kafka/zookeeper.properties
 [2022-12-28 16:43:38,055] INFO Reading configuration from: /opt/brew/etc/kafka/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
@@ -15,7 +15,7 @@ First start zookeeper instance :
 .
 .
 
-Next Starting Kafka server :
+**Next Starting Kafka server :**
 
  4:45PM @Bharath  ~ /opt/brew/opt/kafka/bin/kafka-server-start /opt/brew/etc/kafka/server.properties
 [2022-12-28 16:45:45,003] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
@@ -31,7 +31,7 @@ Next Starting Kafka server :
 .
 
 
-Run the flask app :
+**Run the flask app :**
 
  2:46PM @Bharath  ~ python3 app.py
  * Serving Flask app 'app' (lazy loading)
@@ -48,7 +48,7 @@ Run the flask app :
 
 
 
-Place an order by passing email id and the number of quantity :
+**Place an order by passing email id and the number of quantity :**
 
 
  3:11PM @Bharath  ~ curl --data "quantity_no_text=10&email_id=naga@gmail.com" http://localhost:5000/order
@@ -85,7 +85,7 @@ Order details {'order_id': '024661dd-53b1-4ca9-a59d-7d93cb1063e0', 'number_of_it
 
 
 
-Get the order details :
+**Get the order details :**
 
  3:19PM @Bharath  ~ curl -i http://localhost:5000/details/b0b996d0-e24e-4598-bcbc-7ba6d402277c
 HTTP/1.0 200 OK
@@ -106,7 +106,7 @@ Date: Fri, 30 Dec 2022 21:19:41 GMT
  
  
  
- Get all order details :
+ **Get all order details (After Authenticating):**
  
   3:32PM @Bharath  ~ curl -i -u admin:admin http://localhost:5000/details                                 
 HTTP/1.0 200 OK
