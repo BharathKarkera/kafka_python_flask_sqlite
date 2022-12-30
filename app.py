@@ -110,7 +110,7 @@ def get_all_order_details():
       return flask.make_response("Could not verify your login!",401, {'WWW-Authenticate':'Basic realm="Login Required !"'})
 
 
-@app.route('/details/<int:order_id>',methods=["GET"])
+@app.route('/details/<string:order_id>',methods=["GET"])
 def get_order_details(order_id):
    connection=sql.connect(db)
    cursor=connection.cursor()
